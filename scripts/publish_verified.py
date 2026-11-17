@@ -5,6 +5,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
+from urllib.request import Request, urlopen
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
 RACES = ROOT / "data/race-monitor.json"
@@ -30,6 +32,22 @@ def main():
         p.error("Source must be HTTPS on the registered official event domain")
     if a.race_year < 2026 or a.race_year > 2100 or not 3 <= len(a.headline.strip()) <= 240 or not 1 <= len(a.distance.strip()) <= 60 or a.review_issue < 1:
         p.error("Invalid year, headline, distance or review issue")
+    history = json.loads((ROOT / "data/monitor-history.json").read_text(encoding="utf-8"))
+    matching = [e for e in history.get("events", []) if e.get("issueNumber") == a.review_issue and e.get("raceId") == a.race]
+    if len(matching) != 1 or matching[0].get("status") != "needs_review":
+        p.error("Review Issue must match exactly one pending alert for this race")
+    token = os.environ.get("GITHUB_TOKEN")
+    repository = os.environ.get("GITHUB_REPOSITORY")
+    if not token or not repository:
+        p.error("GitHub review authorization unavailable")
+    req = Request(f"https://api.github.com/repos/{repository}/issues/{a.review_issue}", headers={
+        "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "User-Agent": "TrailRaceReview/0.1"})
+    with urlopen(req, timeout=20) as response:
+        issue = json.load(response)
+    if issue.get("state") != "open" or issue.get("pull_request") or "[TEST ONLY]" in issue.get("title", ""):
+        p.error("Review Issue must be open, real, and not a pull request")
+    if a.source.rstrip("/") == ("https://github.com/" + repository).rstrip("/"):
+        p.error("A repository URL is not an official race announcement")
     data = json.loads(OUT.read_text(encoding="utf-8"))
     records = data["updates"]
     key = f"{a.race}:{a.review_issue}"
