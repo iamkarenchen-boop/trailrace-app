@@ -43,7 +43,7 @@ class PublishTest(unittest.TestCase):
         self.tmp.cleanup()
 
     def run_publish(self, source="https://montblanc.utmb.world/races/utmb", issue=42, category="lottery", title="[REVIEWED] Official lottery schedule"):
-        args = ["publish_verified.py","--race","utmb","--headline",title,"--source",source,"--race-year","2027","--distance","UTMB","--category",category,"--review-issue",str(issue),"--verified-by","test-reviewer"]
+        args = ["publish_verified.py","--race","utmb","--headline",title,"--source",source,"--race-year","2027","--distance","UTMB","--category",category,"--review-issue",str(issue),"--verified-by","test-reviewer","--evidence","Official race announcement confirms the lottery schedule for 2027.","--confirm-reviewed","YES"]
         with patch.object(sys,"argv",args), patch.dict(os.environ,{"GITHUB_TOKEN":"fake-token","GITHUB_REPOSITORY":"example/trailrace-app"}), patch.object(publisher,"urlopen",return_value=FakeResponse({"state":"open","title":title})), contextlib.redirect_stdout(io.StringIO()):
             publisher.main()
 
