@@ -5,6 +5,7 @@ on:
     - cron: '23 3 * * *'
 permissions:
   contents: write
+  issues: write
 concurrency:
   group: trailrace-monitor
   cancel-in-progress: false
@@ -21,6 +22,10 @@ jobs:
           python-version: '3.12'
       - name: Check public event pages
         run: python scripts/check_races.py
+      - name: Create review Issues for high-priority detections
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/create_review_issues.py
       - name: Commit changed monitor data
         run: |
           git config user.name "github-actions[bot]"
