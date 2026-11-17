@@ -19,6 +19,7 @@ def main():
     p.add_argument("--source", required=True)
     p.add_argument("--race-year", type=int, required=True)
     p.add_argument("--distance", required=True)
+    p.add_argument("--category", required=True, choices=["registration", "lottery", "eligibility"])
     p.add_argument("--review-issue", type=int, required=True)
     p.add_argument("--verified-by", required=True)
     a = p.parse_args()
@@ -55,7 +56,7 @@ def main():
         p.error("This review Issue has already been published")
     records.append({
         "id": key, "raceId": a.race, "raceName": race["name"],
-        "raceYear": a.race_year, "distance": a.distance.strip(),
+        "raceYear": a.race_year, "distance": a.distance.strip(), "category": a.category,
         "headline": a.headline.strip(), "sourceUrl": a.source,
         "reviewIssue": a.review_issue, "verifiedBy": a.verified_by,
         "verifiedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
