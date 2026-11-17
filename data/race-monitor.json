@@ -10,7 +10,8 @@
       "status": "pending_verification",
       "lastChecked": "2026-11-17T10:55:11+00:00",
       "changes": [],
-      "checkStatus": "checked"
+      "checkStatus": "error",
+      "lastErrorAt": "2026-11-17T11:02:46+00:00"
     },
     {
       "id": "lavaredo50",
@@ -19,7 +20,8 @@
       "status": "pending_verification",
       "lastChecked": "2026-11-17T10:55:11+00:00",
       "changes": [],
-      "checkStatus": "checked"
+      "checkStatus": "error",
+      "lastErrorAt": "2026-11-17T11:02:46+00:00"
     },
     {
       "id": "istria",
@@ -28,7 +30,8 @@
       "status": "pending_verification",
       "lastChecked": "2026-11-17T10:55:11+00:00",
       "changes": [],
-      "checkStatus": "checked"
+      "checkStatus": "error",
+      "lastErrorAt": "2026-11-17T11:02:46+00:00"
     },
     {
       "id": "mozart",
@@ -37,7 +40,8 @@
       "status": "pending_verification",
       "lastChecked": "2026-11-17T10:55:11+00:00",
       "changes": [],
-      "checkStatus": "checked"
+      "checkStatus": "error",
+      "lastErrorAt": "2026-11-17T11:02:46+00:00"
     },
     {
       "id": "andorra",
@@ -46,9 +50,10 @@
       "status": "pending_verification",
       "lastChecked": "2026-11-17T10:55:11+00:00",
       "changes": [],
-      "checkStatus": "checked"
+      "checkStatus": "error",
+      "lastErrorAt": "2026-11-17T11:02:46+00:00"
     }
   ],
-  "lastRun": "2026-11-17T10:55:11+00:00",
-  "lastRunSuccessCount": 5
+  "lastRun": "2026-11-17T11:02:46+00:00",
+  "lastRunSuccessCount": 0
 }
