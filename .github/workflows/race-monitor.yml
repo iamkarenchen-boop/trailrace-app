@@ -1,6 +1,11 @@
 name: TrailRace source check
 on:
   workflow_dispatch:
+    inputs:
+      test_notification:
+        description: "Create a clearly marked synthetic TEST Issue (deduplicated)"
+        type: boolean
+        default: false
   schedule:
     - cron: '23 3 * * *'
 permissions:
@@ -25,6 +30,7 @@ jobs:
       - name: Create review Issues for high-priority detections
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRAILRACE_TEST_NOTIFICATION: ${{ inputs.test_notification == true && '1' || '0' }}
         run: python scripts/create_review_issues.py
       - name: Commit changed monitor data
         run: |
