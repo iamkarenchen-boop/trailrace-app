@@ -5,7 +5,7 @@ import re
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 
@@ -37,7 +37,7 @@ def parse_events(html):
     p.feed(html)
     found = {}
     for href, label in p.items:
-        url = urlparse(href)
+        url = urlparse(urljoin(URL, href))
         host = (url.hostname or "").lower()
         if not re.fullmatch(r"[a-z0-9-]+\\.utmb\\.world", host):
             continue
