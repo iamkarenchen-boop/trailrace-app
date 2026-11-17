@@ -22,6 +22,8 @@ def main():
     p.add_argument("--category", required=True, choices=["registration", "lottery", "eligibility"])
     p.add_argument("--review-issue", type=int, required=True)
     p.add_argument("--verified-by", required=True)
+    p.add_argument("--evidence", required=True, help="Specific official passage supporting the announcement")
+    p.add_argument("--confirm-reviewed", required=True, choices=["YES"])
     a = p.parse_args()
     registry = json.loads(RACES.read_text(encoding="utf-8"))
     race = next((r for r in registry["events"] if r["id"] == a.race), None)
@@ -31,6 +33,8 @@ def main():
     official = urlparse(race["officialUrl"])
     if source.scheme != "https" or not source.hostname or not (source.hostname == official.hostname or source.hostname.endswith("." + official.hostname)):
         p.error("Source must be HTTPS on the registered official event domain")
+    if not 20 <= len(a.evidence.strip()) <= 2000:
+        p.error("Provide 20–2000 characters of specific official evidence")
     if a.race_year < 2026 or a.race_year > 2100 or not 3 <= len(a.headline.strip()) <= 240 or not 1 <= len(a.distance.strip()) <= 60 or a.review_issue < 1:
         p.error("Invalid year, headline, distance or review issue")
     history = json.loads((ROOT / "data/monitor-history.json").read_text(encoding="utf-8"))
@@ -45,7 +49,8 @@ def main():
         "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "User-Agent": "TrailRaceReview/0.1"})
     with urlopen(req, timeout=20) as response:
         issue = json.load(response)
-    if issue.get("state") != "open" or issue.get("pull_request") or "[TEST ONLY]" in issue.get("title", ""):
+    issue_text = (issue.get("title") or "") + "\\n" + (issue.get("body") or "")
+    if issue.get("state") != "open" or issue.get("pull_request") or "TEST ONLY" in issue_text.upper():
         p.error("Review Issue must be open, real, and not a pull request")
     if a.source.rstrip("/") == ("https://github.com/" + repository).rstrip("/"):
         p.error("A repository URL is not an official race announcement")
@@ -58,6 +63,7 @@ def main():
         "id": key, "raceId": a.race, "raceName": race["name"],
         "raceYear": a.race_year, "distance": a.distance.strip(), "category": a.category,
         "headline": a.headline.strip(), "sourceUrl": a.source,
+        "officialEvidence": a.evidence.strip(),
         "reviewIssue": a.review_issue, "verifiedBy": a.verified_by,
         "verifiedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "status": "manually_verified"
