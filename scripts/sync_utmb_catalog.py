@@ -64,7 +64,13 @@ def parse_events(html):
         "anchorCount": p.anchors,
         "eventDomainCandidates": len(candidate_hosts),
         "datedEventLinks": len(found),
-        "hasEventDirectoryHeading": "UTMB World Series Events" in html
+        "hasEventDirectoryHeading": "UTMB World Series Events" in html,
+        "nextData": 'id="__NEXT_DATA__"' in html,
+        "nuxtData": "__NUXT_DATA__" in html or "__NUXT__" in html,
+        "utmbDomainMentions": html.lower().count(".utmb.world"),
+        "eventKeywords": {k: html.lower().count(k) for k in ("lavaredo", "chianti", "istria", "mozart", "andorra")},
+        "linkHostSamples": sorted({urlparse(urljoin(URL, href)).hostname or "" for href, _ in p.items})[:12],
+        "eventLinkSamples": [urlparse(urljoin(URL, href)).path[:100] for href, label in p.items if any(k in (href+" "+label).lower() for k in ("lavaredo", "chianti", "istria"))][:8]
     }
 
 def main():
