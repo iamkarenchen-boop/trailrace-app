@@ -23,6 +23,7 @@ def main():
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
     names = {e["id"]: e["name"] for e in registry.get("events", [])}
     created = 0
+    failed = 0
     test_mode = os.getenv("TRAILRACE_TEST_NOTIFICATION") == "1"
     if test_mode:
         history = {"events": [{"raceId": "trailrace_test", "detectedAt": "2026-11-17T00:00:00+00:00", "status": "needs_review", "sourceUrl": "https://github.com/" + repo, "categories": [{"category": "registration_open", "priority": "high"}]}]}
@@ -62,7 +63,7 @@ def main():
             "It is not a confirmed registration opening, deadline, or lottery change.\n"
         )
         if test_mode:
-            body = "**TEST ONLY — SYNTHETIC DATA. NO REAL RACE ANNOUNCEMENT.**\\n\\n" + body
+            body = "**TEST ONLY — SYNTHETIC DATA. NO REAL RACE ANNOUNCEMENT.**\n\n" + body
         payload = json.dumps({"title": title, "body": body}).encode("utf-8")
         req = Request(
             f"https://api.github.com/repos/{repo}/issues",
@@ -75,6 +76,7 @@ def main():
                 result = json.load(response)
         except (HTTPError, URLError, TimeoutError) as error:
             print(f"Issue creation failed for {race}: {type(error).__name__}", file=sys.stderr)
+            failed += 1
             continue
         if test_mode:
             print(f"TEST: created Issue #{result['number']} — {result['html_url']}")
@@ -85,7 +87,9 @@ def main():
         created += 1
         # Save immediately so later failures do not lose dedup state.
         HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Created {created} high-priority review Issues.")
+    print(f"Created {created} high-priority review Issues; failures: {failed}.")
+    if failed:
+        raise SystemExit("Some review Issues could not be created; retry required.")
 
 if __name__ == "__main__":
     main()
