@@ -238,7 +238,8 @@
       "sourceUrl": "https://chianti.utmb.world/",
       "verifiedAt": "2026-11-17",
       "dateScope": "race_start",
-      "sourceStatus": "official_page"
+      "sourceStatus": "official_page_verified_2026-11-17",
+      "registrationStatus": "open"
     },
     {
       "id": "official_chianti_chiantihalftrail_2027",
@@ -255,7 +256,8 @@
       "sourceUrl": "https://chianti.utmb.world/",
       "verifiedAt": "2026-11-17",
       "dateScope": "race_start",
-      "sourceStatus": "official_page"
+      "sourceStatus": "official_page_verified_2026-11-17",
+      "registrationStatus": "full"
     },
     {
       "id": "official_chianti_chiantimarathontrail_2027",
@@ -272,7 +274,8 @@
       "sourceUrl": "https://chianti.utmb.world/",
       "verifiedAt": "2026-11-17",
       "dateScope": "race_start",
-      "sourceStatus": "official_page"
+      "sourceStatus": "official_page_verified_2026-11-17",
+      "registrationStatus": "full"
     },
     {
       "id": "official_chianti_chiantiultratrail_2027",
@@ -286,10 +289,11 @@
       "elevationGainM": 3000,
       "runningStones": 3,
       "startDate": "2027-03-20",
-      "sourceUrl": "https://chianti.utmb.world/",
+      "sourceUrl": "https://chianti.utmb.world/races/cut",
       "verifiedAt": "2026-11-17",
       "dateScope": "race_start",
-      "sourceStatus": "official_page"
+      "sourceStatus": "official_page_verified_2026-11-17",
+      "registrationStatus": "full"
     },
     {
       "id": "official_chianti_ultratrailchianticastles_2027",
@@ -306,7 +310,8 @@
       "sourceUrl": "https://chianti.utmb.world/",
       "verifiedAt": "2026-11-17",
       "dateScope": "race_start",
-      "sourceStatus": "official_page"
+      "sourceStatus": "official_page_verified_2026-11-17",
+      "registrationStatus": "full"
     },
     {
       "id": "official_andorra_ultra105k_2027",
