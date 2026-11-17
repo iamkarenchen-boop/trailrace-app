@@ -72,7 +72,7 @@ def extract(url):
     for match in list(KEYWORDS.finditer(text))[:60]:
         snippets.append(text[max(0, match.start()-85):match.end()+150])
     normalized = sorted(set(re.sub(r"\s+", " ", snippet).strip().lower() for snippet in snippets))
-    return hashlib.sha256("\n".join(normalized).encode("utf-8")).hexdigest(), len(normalized)
+    return hashlib.sha256("\n".join(normalized).encode("utf-8")).hexdigest(), len(normalized), normalized
 
 def main():
     registry = read_json(REGISTRY, {})
@@ -93,7 +93,7 @@ def main():
                 # Existing snapshots only contain hashes. Never claim a precise category without an old text baseline.
                 labels = classify(added) if added else [{"category": "unclassified_change", "priority": "low"}]
                 history["events"].append({"raceId": key, "detectedAt": now, "type": "page_keyword_change", "status": "needs_review", "sourceUrl": url, "categories": labels, "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."})
-            previous[key] = {"hash": digest, "keywordMatches": count, "lastSuccessfulCheck": now, "sourceUrl": url}
+            previous[key] = {"hash": digest, "keywordMatches": count, "lastSuccessfulCheck": now, "sourceUrl": url, "snippets": snippets}
             event["lastChecked"] = now
             event["checkStatus"] = "checked"
         except (HTTPError, URLError, TimeoutError, ValueError, UnicodeError) as error:
@@ -108,6 +108,8 @@ def main():
     write_json(SNAPSHOTS, previous)
     write_json(HISTORY, history)
     print(f"Checked {success}/{len(registry.get('events', []))} sources; {len(history['events'])} retained review items.")
+    if success == 0:
+        raise SystemExit("All source checks failed; workflow must not report success.")
 
 if __name__ == "__main__":
     main()
