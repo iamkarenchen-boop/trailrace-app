@@ -36,6 +36,14 @@ on:
           - registration
           - lottery
           - eligibility
+      official_evidence:
+        description: "Exact official passage supporting the claim (20+ chars)"
+        required: true
+        type: string
+      confirm_reviewed:
+        description: "Type YES after personally checking the official source"
+        required: true
+        type: string
       review_issue:
         description: "GitHub Issue number reviewed by a human"
         required: true
@@ -65,10 +73,12 @@ jobs:
           CATEGORY: ${{ inputs.category }}
           REVIEW_ISSUE: ${{ inputs.review_issue }}
           VERIFIED_BY: ${{ github.actor }}
+          OFFICIAL_EVIDENCE: ${{ inputs.official_evidence }}
+          CONFIRM_REVIEWED: ${{ inputs.confirm_reviewed }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          python scripts/publish_verified.py --race "$RACE_ID" --headline "$HEADLINE" --source "$OFFICIAL_SOURCE" --race-year "$RACE_YEAR" --distance "$DISTANCE" --category "$CATEGORY" --review-issue "$REVIEW_ISSUE" --verified-by "$VERIFIED_BY"
+          python scripts/publish_verified.py --race "$RACE_ID" --headline "$HEADLINE" --source "$OFFICIAL_SOURCE" --race-year "$RACE_YEAR" --distance "$DISTANCE" --category "$CATEGORY" --review-issue "$REVIEW_ISSUE" --verified-by "$VERIFIED_BY" --evidence "$OFFICIAL_EVIDENCE" --confirm-reviewed "$CONFIRM_REVIEWED"
       - name: Commit verified updates
         run: |
           git config user.name "github-actions[bot]"
