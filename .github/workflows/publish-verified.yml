@@ -28,6 +28,14 @@ on:
         description: "Exact affected distance/category"
         required: true
         type: string
+      category:
+        description: "Verified announcement topic"
+        required: true
+        type: choice
+        options:
+          - registration
+          - lottery
+          - eligibility
       review_issue:
         description: "GitHub Issue number reviewed by a human"
         required: true
@@ -54,12 +62,13 @@ jobs:
           OFFICIAL_SOURCE: ${{ inputs.official_source }}
           RACE_YEAR: ${{ inputs.race_year }}
           DISTANCE: ${{ inputs.distance }}
+          CATEGORY: ${{ inputs.category }}
           REVIEW_ISSUE: ${{ inputs.review_issue }}
           VERIFIED_BY: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          python scripts/publish_verified.py --race "$RACE_ID" --headline "$HEADLINE" --source "$OFFICIAL_SOURCE" --race-year "$RACE_YEAR" --distance "$DISTANCE" --review-issue "$REVIEW_ISSUE" --verified-by "$VERIFIED_BY"
+          python scripts/publish_verified.py --race "$RACE_ID" --headline "$HEADLINE" --source "$OFFICIAL_SOURCE" --race-year "$RACE_YEAR" --distance "$DISTANCE" --category "$CATEGORY" --review-issue "$REVIEW_ISSUE" --verified-by "$VERIFIED_BY"
       - name: Commit verified updates
         run: |
           git config user.name "github-actions[bot]"
