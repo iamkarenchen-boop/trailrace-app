@@ -52,6 +52,14 @@
       "changes": [],
       "checkStatus": "checked",
       "lastErrorAt": "2026-11-17T11:02:46+00:00"
+    },
+    {
+      "id": "chianti",
+      "name": "Chianti Ultra Trail by UTMB",
+      "officialUrl": "https://chianti.utmb.world/",
+      "status": "pending_verification",
+      "changes": [],
+      "checkStatus": "pending_first_check"
     }
   ],
   "lastRun": "2026-11-17T11:10:10+00:00",
