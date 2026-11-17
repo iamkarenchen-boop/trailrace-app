@@ -31,7 +31,7 @@ def main():
         p.error("Unknown race ID")
     source = urlparse(a.source)
     official = urlparse(race["officialUrl"])
-    if source.scheme != "https" or not source.hostname or not (source.hostname == official.hostname or source.hostname.endswith("." + official.hostname)):
+    if source.scheme != "https" or not source.hostname or source.username or source.password or source.port not in (None, 443) or not (source.hostname == official.hostname or source.hostname.endswith("." + official.hostname)):
         p.error("Source must be HTTPS on the registered official event domain")
     if not 20 <= len(a.evidence.strip()) <= 2000:
         p.error("Provide 20–2000 characters of specific official evidence")
@@ -52,6 +52,8 @@ def main():
     issue_text = (issue.get("title") or "") + "\\n" + (issue.get("body") or "")
     if issue.get("state") != "open" or issue.get("pull_request") or "TEST ONLY" in issue_text.upper():
         p.error("Review Issue must be open, real, and not a pull request")
+    if not issue.get("html_url", "").startswith("https://github.com/" + repository + "/issues/"):
+        p.error("Review Issue must belong to this repository")
     if a.source.rstrip("/") == ("https://github.com/" + repository).rstrip("/"):
         p.error("A repository URL is not an official race announcement")
     data = json.loads(OUT.read_text(encoding="utf-8"))
