@@ -34,6 +34,7 @@ on:
         type: string
 permissions:
   contents: write
+  issues: read
 concurrency:
   group: trailrace-publish
   cancel-in-progress: false
@@ -55,6 +56,8 @@ jobs:
           DISTANCE: ${{ inputs.distance }}
           REVIEW_ISSUE: ${{ inputs.review_issue }}
           VERIFIED_BY: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           python scripts/publish_verified.py --race "$RACE_ID" --headline "$HEADLINE" --source "$OFFICIAL_SOURCE" --race-year "$RACE_YEAR" --distance "$DISTANCE" --review-issue "$REVIEW_ISSUE" --verified-by "$VERIFIED_BY"
       - name: Commit verified updates
