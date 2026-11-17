@@ -1,0 +1,33 @@
+name: Sync UTMB event catalog
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: trailrace-catalog-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch public UTMB event directory if allowed
+        run: python scripts/sync_utmb_catalog.py
+      - name: Commit changed catalog only
+        run: |
+          if git diff --quiet -- data/utmb-events.json && [ -z "$(git ls-files --others --exclude-standard data/utmb-events.json)" ]; then
+            echo "No catalog changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/utmb-events.json
+          git commit -m "Sync UTMB public event directory"
+          git pull --rebase
+          git push
