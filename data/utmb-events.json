@@ -1,0 +1,708 @@
+{
+  "source": "https://utmb.world/utmb-world-series-events",
+  "checkedAt": "2026-11-17T11:50:52+00:00",
+  "scope": "event_series_only",
+  "count": 70,
+  "events": [
+    {
+      "id": "utmbseries_alsace",
+      "slug": "alsace",
+      "name": "Alsace",
+      "officialUrl": "https://alsace.utmb.world/",
+      "dateRangeText": "13 - 16 May 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_amazean",
+      "slug": "amazean",
+      "name": "Amazean",
+      "officialUrl": "https://amazean.utmb.world/",
+      "dateRangeText": "29 April - 02 May 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_andorra",
+      "slug": "andorra",
+      "name": "Andorra",
+      "officialUrl": "https://andorra.utmb.world/",
+      "dateRangeText": "10 - 13 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_arcofattrition",
+      "slug": "arcofattrition",
+      "name": "Arcofattrition",
+      "officialUrl": "https://arcofattrition.utmb.world/",
+      "dateRangeText": "22 - 24 January 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_bariloche",
+      "slug": "bariloche",
+      "name": "Bariloche",
+      "officialUrl": "https://bariloche.utmb.world/",
+      "dateRangeText": "18 - 22 November 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_borealys",
+      "slug": "borealys",
+      "name": "Borealys",
+      "officialUrl": "https://borealys.utmb.world/",
+      "dateRangeText": "13 - 15 August 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_bucovina",
+      "slug": "bucovina",
+      "name": "Bucovina",
+      "officialUrl": "https://bucovina.utmb.world/",
+      "dateRangeText": "23 - 25 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_canyons",
+      "slug": "canyons",
+      "name": "Canyons",
+      "officialUrl": "https://canyons.utmb.world/",
+      "dateRangeText": "22 - 25 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_chattanooga",
+      "slug": "chattanooga",
+      "name": "Chattanooga",
+      "officialUrl": "https://chattanooga.utmb.world/",
+      "dateRangeText": "04 - 06 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_chiangmai",
+      "slug": "chiangmai",
+      "name": "Chiangmai",
+      "officialUrl": "https://chiangmai.utmb.world/",
+      "dateRangeText": "27 November - 06 December 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_chianti",
+      "slug": "chianti",
+      "name": "Chianti",
+      "officialUrl": "https://chianti.utmb.world/",
+      "dateRangeText": "18 - 21 March 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_chihuahua",
+      "slug": "chihuahua",
+      "name": "Chihuahua",
+      "officialUrl": "https://chihuahua.utmb.world/",
+      "dateRangeText": "01 - 03 October 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_dajingmen",
+      "slug": "dajingmen",
+      "name": "Dajingmen",
+      "officialUrl": "https://dajingmen.utmb.world/",
+      "dateRangeText": "11 - 13 September 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_desertrats",
+      "slug": "desertrats",
+      "name": "Desertrats",
+      "officialUrl": "https://desertrats.utmb.world/",
+      "dateRangeText": "08 - 11 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_eiger",
+      "slug": "eiger",
+      "name": "Eiger",
+      "officialUrl": "https://eiger.utmb.world/",
+      "dateRangeText": "14 - 18 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_eryri",
+      "slug": "eryri",
+      "name": "Eryri",
+      "officialUrl": "https://eryri.utmb.world/",
+      "dateRangeText": "14 - 16 May 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_gauja",
+      "slug": "gauja",
+      "name": "Gauja",
+      "officialUrl": "https://gauja.utmb.world/",
+      "dateRangeText": "06 - 08 August 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_grindstone",
+      "slug": "grindstone",
+      "name": "Grindstone",
+      "officialUrl": "https://grindstone.utmb.world/",
+      "dateRangeText": "23 - 26 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_hiroshima",
+      "slug": "hiroshima",
+      "name": "Hiroshima",
+      "officialUrl": "https://hiroshima.utmb.world/",
+      "dateRangeText": "09 - 11 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_istria",
+      "slug": "istria",
+      "name": "Istria",
+      "officialUrl": "https://istria.utmb.world/",
+      "dateRangeText": "01 - 04 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_jujuy",
+      "slug": "jujuy",
+      "name": "Jujuy",
+      "officialUrl": "https://jujuy.utmb.world/",
+      "dateRangeText": "31 March - 04 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_julianalps",
+      "slug": "julianalps",
+      "name": "Julianalps",
+      "officialUrl": "https://julianalps.utmb.world/",
+      "dateRangeText": "16 - 19 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_kackar",
+      "slug": "kackar",
+      "name": "Kackar",
+      "officialUrl": "https://kackar.utmb.world/",
+      "dateRangeText": "10 - 12 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_kagaspa",
+      "slug": "kagaspa",
+      "name": "Kagaspa",
+      "officialUrl": "https://kagaspa.utmb.world/",
+      "dateRangeText": "17 - 20 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_kat",
+      "slug": "kat",
+      "name": "Kat",
+      "officialUrl": "https://kat.utmb.world/",
+      "dateRangeText": "05 - 07 August 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_kodiak",
+      "slug": "kodiak",
+      "name": "Kodiak",
+      "officialUrl": "https://kodiak.utmb.world/",
+      "dateRangeText": "08 - 11 October 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_kosciuszko",
+      "slug": "kosciuszko",
+      "name": "Kosciuszko",
+      "officialUrl": "https://kosciuszko.utmb.world/",
+      "dateRangeText": "26 - 28 November 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_kullamannen",
+      "slug": "kullamannen",
+      "name": "Kullamannen",
+      "officialUrl": "https://kullamannen.utmb.world/",
+      "dateRangeText": "05 - 06 November 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_laketoba",
+      "slug": "laketoba",
+      "name": "Laketoba",
+      "officialUrl": "https://laketoba.utmb.world/",
+      "dateRangeText": "11 - 13 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_lavaredo",
+      "slug": "lavaredo",
+      "name": "Lavaredo",
+      "officialUrl": "https://lavaredo.utmb.world/",
+      "dateRangeText": "23 - 27 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_malaysia",
+      "slug": "malaysia",
+      "name": "Malaysia",
+      "officialUrl": "https://malaysia.utmb.world/",
+      "dateRangeText": "04 - 05 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_mallorca",
+      "slug": "mallorca",
+      "name": "Mallorca",
+      "officialUrl": "https://mallorca.utmb.world/",
+      "dateRangeText": "30 October - 01 November 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_mogan",
+      "slug": "mogan",
+      "name": "Mogan",
+      "officialUrl": "https://mogan.utmb.world/",
+      "dateRangeText": "16 - 18 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_montblanc",
+      "slug": "montblanc",
+      "name": "Montblanc",
+      "officialUrl": "https://montblanc.utmb.world/",
+      "dateRangeText": "24 - 30 August 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_mount-yun",
+      "slug": "mount-yun",
+      "name": "Mount Yun",
+      "officialUrl": "https://mount-yun.utmb.world/",
+      "dateRangeText": "16 - 18 October 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_mozart",
+      "slug": "mozart",
+      "name": "Mozart",
+      "officialUrl": "https://mozart.utmb.world/",
+      "dateRangeText": "5th June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_mrww",
+      "slug": "mrww",
+      "name": "Mrww",
+      "officialUrl": "https://mrww.utmb.world/",
+      "dateRangeText": "15 - 18 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_mut",
+      "slug": "mut",
+      "name": "Mut",
+      "officialUrl": "https://mut.utmb.world/",
+      "dateRangeText": "27 - 30 May 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_nice",
+      "slug": "nice",
+      "name": "Nice",
+      "officialUrl": "https://nice.utmb.world/",
+      "dateRangeText": "24 - 27 September 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_ohmeudeus",
+      "slug": "ohmeudeus",
+      "name": "Ohmeudeus",
+      "officialUrl": "https://ohmeudeus.utmb.world/",
+      "dateRangeText": "30 April - 02 May 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_oman",
+      "slug": "oman",
+      "name": "Oman",
+      "officialUrl": "https://oman.utmb.world/",
+      "dateRangeText": "10 - 12 December 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_pacifictrails",
+      "slug": "pacifictrails",
+      "name": "Pacifictrails",
+      "officialUrl": "https://pacifictrails.utmb.world/",
+      "dateRangeText": "13 - 15 November 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_paraty",
+      "slug": "paraty",
+      "name": "Paraty",
+      "officialUrl": "https://paraty.utmb.world/",
+      "dateRangeText": "23 - 26 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_pieniny",
+      "slug": "pieniny",
+      "name": "Pieniny",
+      "officialUrl": "https://pieniny.utmb.world/",
+      "dateRangeText": "22 - 25 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_piut",
+      "slug": "piut",
+      "name": "Piut",
+      "officialUrl": "https://piut.utmb.world/",
+      "dateRangeText": "09 - 10 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_puerto-vallarta",
+      "slug": "puerto-vallarta",
+      "name": "Puerto Vallarta",
+      "officialUrl": "https://puerto-vallarta.utmb.world/",
+      "dateRangeText": "04 - 06 March 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_quito",
+      "slug": "quito",
+      "name": "Quito",
+      "officialUrl": "https://quito.utmb.world/",
+      "dateRangeText": "30 July - 01 August 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_restonica",
+      "slug": "restonica",
+      "name": "Restonica",
+      "officialUrl": "https://restonica.utmb.world/",
+      "dateRangeText": "06 - 10 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_rothrock",
+      "slug": "rothrock",
+      "name": "Rothrock",
+      "officialUrl": "https://rothrock.utmb.world/",
+      "dateRangeText": "14 - 16 May 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_saint-jacques",
+      "slug": "saint-jacques",
+      "name": "Saint Jacques",
+      "officialUrl": "https://saint-jacques.utmb.world/",
+      "dateRangeText": "18 - 20 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_shudao",
+      "slug": "shudao",
+      "name": "Shudao",
+      "officialUrl": "https://shudao.utmb.world/",
+      "dateRangeText": "06 - 08 November 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_skylinescotland",
+      "slug": "skylinescotland",
+      "name": "Skylinescotland",
+      "officialUrl": "https://skylinescotland.utmb.world/",
+      "dateRangeText": "17 - 19 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_snowbasin",
+      "slug": "snowbasin",
+      "name": "Snowbasin",
+      "officialUrl": "https://snowbasin.utmb.world/",
+      "dateRangeText": "16 - 18 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_speedgoat",
+      "slug": "speedgoat",
+      "name": "Speedgoat",
+      "officialUrl": "https://speedgoat.utmb.world/",
+      "dateRangeText": "22 - 24 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_stubai",
+      "slug": "stubai",
+      "name": "Stubai",
+      "officialUrl": "https://stubai.utmb.world/",
+      "dateRangeText": "02 - 03 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_tarawera",
+      "slug": "tarawera",
+      "name": "Tarawera",
+      "officialUrl": "https://tarawera.utmb.world/",
+      "dateRangeText": "13 - 14 February 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_tenerife",
+      "slug": "tenerife",
+      "name": "Tenerife",
+      "officialUrl": "https://tenerife.utmb.world/",
+      "dateRangeText": "08 - 10 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_torrencial",
+      "slug": "torrencial",
+      "name": "Torrencial",
+      "officialUrl": "https://torrencial.utmb.world/",
+      "dateRangeText": "24 - 27 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_transjeju",
+      "slug": "transjeju",
+      "name": "Transjeju",
+      "officialUrl": "https://transjeju.utmb.world/",
+      "dateRangeText": "02 - 04 October 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_translantau",
+      "slug": "translantau",
+      "name": "Translantau",
+      "officialUrl": "https://translantau.utmb.world/",
+      "dateRangeText": "13 - 15 November 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_uta",
+      "slug": "uta",
+      "name": "Uta",
+      "officialUrl": "https://uta.utmb.world/",
+      "dateRangeText": "13 - 16 May 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_valdaran",
+      "slug": "valdaran",
+      "name": "Valdaran",
+      "officialUrl": "https://valdaran.utmb.world/",
+      "dateRangeText": "07 - 11 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_ventoux",
+      "slug": "ventoux",
+      "name": "Ventoux",
+      "officialUrl": "https://ventoux.utmb.world/",
+      "dateRangeText": "23 - 25 April 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_verbier",
+      "slug": "verbier",
+      "name": "Verbier",
+      "officialUrl": "https://verbier.utmb.world/",
+      "dateRangeText": "09 - 11 July 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_vietnamhighlands",
+      "slug": "vietnamhighlands",
+      "name": "Vietnamhighlands",
+      "officialUrl": "https://vietnamhighlands.utmb.world/",
+      "dateRangeText": "07 - 10 January 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_whistler",
+      "slug": "whistler",
+      "name": "Whistler",
+      "officialUrl": "https://whistler.utmb.world/",
+      "dateRangeText": "25 - 27 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_wildstrubel",
+      "slug": "wildstrubel",
+      "name": "Wildstrubel",
+      "officialUrl": "https://wildstrubel.utmb.world/",
+      "dateRangeText": "09 - 12 September 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_xiamen",
+      "slug": "xiamen",
+      "name": "Xiamen",
+      "officialUrl": "https://xiamen.utmb.world/",
+      "dateRangeText": "14 - 15 March 2026",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_xtrail",
+      "slug": "xtrail",
+      "name": "Xtrail",
+      "officialUrl": "https://xtrail.utmb.world/",
+      "dateRangeText": "05 - 07 March 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    },
+    {
+      "id": "utmbseries_zugspitz",
+      "slug": "zugspitz",
+      "name": "Zugspitz",
+      "officialUrl": "https://zugspitz.utmb.world/",
+      "dateRangeText": "17 - 20 June 2027",
+      "eventDate": null,
+      "sourceUrl": "https://utmb.world/utmb-world-series-events",
+      "dateVerified": false
+    }
+  ]
+}
