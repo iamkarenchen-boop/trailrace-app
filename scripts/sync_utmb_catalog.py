@@ -43,13 +43,13 @@ def parse_events(html):
     for href, label in p.items:
         url = urlparse(urljoin(URL, href))
         host = (url.hostname or "").lower()
-        if not re.fullmatch(r"[a-z0-9-]+\\.utmb\\.world", host):
+        if not re.fullmatch(r"[a-z0-9-]+\.utmb\.world", host):
             continue
         if host in ("img.utmb.world", "live.utmb.world", "eushop.utmb.world"):
             continue
         candidate_hosts.add(host)
         # Event directory links use date-range text; exclude global navigation links.
-        if not re.search(r"\\b20\\d{2}\\b", label):
+        if not re.search(r"\b20\d{2}\b", label):
             continue
         slug = host.split(".")[0]
         found[slug] = {
