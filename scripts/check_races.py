@@ -16,6 +16,18 @@ SNAPSHOTS = ROOT / "data" / "page-snapshots.json"
 HISTORY = ROOT / "data" / "monitor-history.json"
 KEYWORDS = re.compile(r"registration|register|lottery|ballot|drawing|qualification|qualifying|running stones|报名|抽签|资格|inscription|tirage au sort|iscrizioni|anmeldung", re.I)
 MAX_BYTES = 1_000_000
+CATEGORIES = [
+    ("registration_deadline", "high", r"registration deadline|registration closes?|closing date|报名截止|截止报名|date limite d.inscription|fin des inscriptions"),
+    ("registration_open", "high", r"registration opens?|registration is open|register now|报名开放|开放报名|ouverture des inscriptions|iscrizioni aperte"),
+    ("lottery", "high", r"lottery|ballot|draw results?|tirage au sort|抽签|中签"),
+    ("eligibility", "high", r"qualif(?:ication|ying)|running stones|eligib(?:le|ility)|参赛资格|报名资格"),
+    ("race_category", "medium", r"race distance|race format|new distance|取消组别|新增组别|course distance"),
+]
+def classify(snippets):
+    text = " ".join(snippets)
+    matched = [{"category": category, "priority": priority} for category, priority, pattern in CATEGORIES if re.search(pattern, text, re.I)]
+    return matched or [{"category": "other_page_text", "priority": "low"}]
+
 
 class PageText(HTMLParser):
     def __init__(self):
@@ -72,11 +84,15 @@ def main():
         key = event["id"]
         url = event["officialUrl"]
         try:
-            digest, count = extract(url)
+            digest, count, snippets = extract(url)
             success += 1
             old = previous.get(key, {})
             if old.get("hash") and old["hash"] != digest:
-                history["events"].append({"raceId": key, "detectedAt": now, "type": "page_keyword_change", "status": "needs_review", "sourceUrl": url, "description": "Relevant page text changed; NOT a verified registration or rule update."})
+                old_snippets = set(old.get("snippets", []))
+                added = [item for item in snippets if item not in old_snippets] if "snippets" in old else []
+                # Existing snapshots only contain hashes. Never claim a precise category without an old text baseline.
+                labels = classify(added) if added else [{"category": "unclassified_change", "priority": "low"}]
+                history["events"].append({"raceId": key, "detectedAt": now, "type": "page_keyword_change", "status": "needs_review", "sourceUrl": url, "categories": labels, "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."})
             previous[key] = {"hash": digest, "keywordMatches": count, "lastSuccessfulCheck": now, "sourceUrl": url}
             event["lastChecked"] = now
             event["checkStatus"] = "checked"
