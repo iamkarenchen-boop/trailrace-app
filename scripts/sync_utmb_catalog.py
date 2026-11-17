@@ -62,6 +62,7 @@ def main():
     with urlopen(req, timeout=25) as r:
         html = r.read(3_000_000).decode("utf-8", errors="replace")
     events = parse_events(html)
+    print(f"Catalog parser discovered {len(events)} distinct official event domains.")
     if len(events) < 30:
         raise SystemExit(f"Only {len(events)} events parsed; refusing to overwrite existing catalog.")
     previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
