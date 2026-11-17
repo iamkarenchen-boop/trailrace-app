@@ -8,6 +8,11 @@ on:
         default: false
   schedule:
     - cron: '23 3 * * *'
+  push:
+    paths:
+      - 'scripts/check_races.py'
+      - 'data/race-monitor.json'
+      - '.github/workflows/race-monitor.yml'
 permissions:
   contents: write
   issues: write
