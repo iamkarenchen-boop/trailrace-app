@@ -17,40 +17,55 @@ AGENT = "TrailRaceCatalog/0.1 (+public event catalog; daily)"
 class Links(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.href = None
-        self.label = []
+        self.active = None
+        self.parts = []
         self.items = []
+        self.anchors = 0
     def handle_starttag(self, tag, attrs):
         if tag == "a":
-            self.href = dict(attrs).get("href")
-            self.label = []
+            self.anchors += 1
+            self.active = dict(attrs).get("href", "")
+            self.parts = []
     def handle_data(self, data):
-        if self.href is not None:
-            self.label.append(data)
+        if self.active is not None:
+            self.parts.append(data)
     def handle_endtag(self, tag):
-        if tag == "a" and self.href:
-            self.items.append((self.href, " ".join(" ".join(self.label).split())))
-            self.href = None
+        if tag == "a" and self.active is not None:
+            self.items.append((self.active, " ".join(" ".join(self.parts).split())))
+            self.active = None
+            self.parts = []
 
 def parse_events(html):
     p = Links()
     p.feed(html)
     found = {}
+    candidate_hosts = set()
     for href, label in p.items:
         url = urlparse(urljoin(URL, href))
         host = (url.hostname or "").lower()
         if not re.fullmatch(r"[a-z0-9-]+\\.utmb\\.world", host):
             continue
-        if host in ("img.utmb.world", "live.utmb.world"):
+        if host in ("img.utmb.world", "live.utmb.world", "eushop.utmb.world"):
             continue
-        # Only catalog links carrying an event date, not generic navigation.
+        candidate_hosts.add(host)
+        # Event directory links use date-range text; exclude global navigation links.
         if not re.search(r"\\b20\\d{2}\\b", label):
             continue
         slug = host.split(".")[0]
-        found[slug] = {"id": "utmbseries_" + slug, "slug": slug, "name": slug.replace("-", " ").title(),
-                       "officialUrl": "https://" + host + "/", "dateRangeText": label,
-                       "eventDate": None, "sourceUrl": URL, "dateVerified": False}
-    return sorted(found.values(), key=lambda e: e["slug"])
+        found[slug] = {
+            "id": "utmbseries_" + slug, "slug": slug,
+            "name": slug.replace("-", " ").title(),
+            "officialUrl": "https://" + host + "/",
+            "dateRangeText": label, "eventDate": None,
+            "sourceUrl": URL, "dateVerified": False
+        }
+    return sorted(found.values(), key=lambda e: e["slug"]), {
+        "htmlBytes": len(html.encode("utf-8")),
+        "anchorCount": p.anchors,
+        "eventDomainCandidates": len(candidate_hosts),
+        "datedEventLinks": len(found),
+        "hasEventDirectoryHeading": "UTMB World Series Events" in html
+    }
 
 def main():
     robots = RobotFileParser()
@@ -61,8 +76,9 @@ def main():
     req = Request(URL, headers={"User-Agent": AGENT, "Accept": "text/html"})
     with urlopen(req, timeout=25) as r:
         html = r.read(3_000_000).decode("utf-8", errors="replace")
-    events = parse_events(html)
-    print(f"Catalog parser discovered {len(events)} distinct official event domains.")
+    events, diagnostics = parse_events(html)
+    print("Safe HTML diagnostics:", json.dumps(diagnostics, sort_keys=True))
+    print(f"Catalog parser discovered {len(events)} dated event series.")
     if len(events) < 30:
         raise SystemExit(f"Only {len(events)} events parsed; refusing to overwrite existing catalog.")
     previous = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
