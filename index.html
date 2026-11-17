@@ -29,7 +29,7 @@ function render(){const tx=t();renderMonitor();renderFollows();renderFollowFeed(
 const q=document.getElementById("search").value.toLowerCase();
 const df=document.getElementById("distanceFilter").value,gf=document.getElementById("gainFilter").value,mf=document.getElementById("monthFilter").value,yf=document.getElementById("yearFilter").value,sf=document.getElementById("sortFilter").value;
 const yearEl=document.getElementById("yearFilter"),monthEl=document.getElementById("monthFilter");
-const years=[...new Set(races.map(r=>r.date&&/^\\d{4}-\\d{2}-\\d{2}$/.test(r.date)?r.date.slice(0,4):null).filter(Boolean))].sort();
+const years=[...new Set(races.map(r=>r.date&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)?r.date.slice(0,4):null).filter(Boolean))].sort();
 yearEl.innerHTML='<option value="all">'+(lang==="zh"?"全部年份":"All years")+'</option>'+years.map(y=>'<option value="'+y+'">'+y+'</option>').join("");
 yearEl.value=years.includes(yf)?yf:"all";
 monthEl.innerHTML='<option value="all">'+(lang==="zh"?"全部月份":"All months")+'</option>'+Array.from({length:12},(_,i)=>'<option value="'+String(i+1).padStart(2,"0")+'">'+(lang==="zh"?(i+1)+"月":new Date(2027,i,1).toLocaleString("en-US",{month:"short"}))+'</option>').join("");
@@ -38,7 +38,7 @@ const f=document.getElementById("distanceFilter"),g=document.getElementById("gai
 f.options[0].text=lang==="zh"?"全部距离":"All distances";f.options[5].text=lang==="zh"?"其他组别":"Other distances";
 g.options[0].text=lang==="zh"?"全部爬升":"All elevation";g.options[3].text=lang==="zh"?"4,000m以上":"4,000m+";
 o.options[0].text=lang==="zh"?"默认排序":"Default order";o.options[1].text=lang==="zh"?"按比赛日期排序":"Race date";o.options[2].text=lang==="zh"?"按爬升排序":"Elevation gain";
-let list=races.filter(r=>{const date=r.date&&/^\\d{4}-\\d{2}-\\d{2}$/.test(r.date)?r.date:null;
+let list=races.filter(r=>{const date=r.date&&/^\d{4}-\d{2}-\d{2}$/.test(r.date)?r.date:null;
 if(!(r.name+" "+r.country+" "+r.distance+" "+(r.category||"")).toLowerCase().includes(q))return false;
 if(country.value!=="all"&&country.value!==r.country)return false;
 if(df!=="all"){if(!r.officialDistance)return false;if(df==="other"?["20K","50K","100K","100M"].includes(r.category):r.category!==df)return false}
