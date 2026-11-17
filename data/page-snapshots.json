@@ -1,1 +1,32 @@
-{}
+{
+  "utmb": {
+    "hash": "deae055b077003a478aa8dd961ba875fd9f87f65a6f04854dd1479e2f31613aa",
+    "keywordMatches": 15,
+    "lastSuccessfulCheck": "2026-11-17T10:55:11+00:00",
+    "sourceUrl": "https://montblanc.utmb.world/"
+  },
+  "lavaredo50": {
+    "hash": "8525f91a757cf604afbefb1edcdc50419d2645e678303539d0697cf8d0003110",
+    "keywordMatches": 15,
+    "lastSuccessfulCheck": "2026-11-17T10:55:11+00:00",
+    "sourceUrl": "https://lavaredo.utmb.world/"
+  },
+  "istria": {
+    "hash": "06ab29df88d75e3059d8d05d61520c44ef80f72b84129f3e3b2190956f2aa077",
+    "keywordMatches": 15,
+    "lastSuccessfulCheck": "2026-11-17T10:55:11+00:00",
+    "sourceUrl": "https://istria.utmb.world/"
+  },
+  "mozart": {
+    "hash": "625aa81c2a25231aa8d413703cbf8373cf26780f706605dbb0bade5386f9fe2f",
+    "keywordMatches": 16,
+    "lastSuccessfulCheck": "2026-11-17T10:55:11+00:00",
+    "sourceUrl": "https://mozart.utmb.world/"
+  },
+  "andorra": {
+    "hash": "8c0911c6ec586ad5745513164762521caf74abef76d9d8303ca847999a8ede97",
+    "keywordMatches": 15,
+    "lastSuccessfulCheck": "2026-11-17T10:55:11+00:00",
+    "sourceUrl": "https://andorra.utmb.world/"
+  }
+}

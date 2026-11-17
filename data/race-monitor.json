@@ -1,47 +1,54 @@
 {
   "schemaVersion": 1,
   "lastReviewed": null,
-  "monitoringActive": false,
+  "monitoringActive": true,
   "events": [
     {
       "id": "utmb",
       "name": "UTMB Mont-Blanc",
       "officialUrl": "https://montblanc.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": null,
-      "changes": []
+      "lastChecked": "2026-11-17T10:55:11+00:00",
+      "changes": [],
+      "checkStatus": "checked"
     },
     {
       "id": "lavaredo50",
       "name": "Lavaredo Ultra Trail",
       "officialUrl": "https://lavaredo.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": null,
-      "changes": []
+      "lastChecked": "2026-11-17T10:55:11+00:00",
+      "changes": [],
+      "checkStatus": "checked"
     },
     {
       "id": "istria",
       "name": "Istria 100 by UTMB",
       "officialUrl": "https://istria.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": null,
-      "changes": []
+      "lastChecked": "2026-11-17T10:55:11+00:00",
+      "changes": [],
+      "checkStatus": "checked"
     },
     {
       "id": "mozart",
       "name": "Mozart 100 by UTMB",
       "officialUrl": "https://mozart.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": null,
-      "changes": []
+      "lastChecked": "2026-11-17T10:55:11+00:00",
+      "changes": [],
+      "checkStatus": "checked"
     },
     {
       "id": "andorra",
       "name": "Andorra by UTMB",
       "officialUrl": "https://andorra.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": null,
-      "changes": []
+      "lastChecked": "2026-11-17T10:55:11+00:00",
+      "changes": [],
+      "checkStatus": "checked"
     }
-  ]
+  ],
+  "lastRun": "2026-11-17T10:55:11+00:00",
+  "lastRunSuccessCount": 5
 }
