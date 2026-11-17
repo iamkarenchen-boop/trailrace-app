@@ -1,0 +1,51 @@
+name: Dismiss false-positive race alert
+on:
+  workflow_dispatch:
+    inputs:
+      review_issue:
+        description: "Existing race alert Issue number (not TEST)"
+        required: true
+        type: string
+      reason:
+        description: "Why this is a false positive (8+ characters)"
+        required: true
+        type: string
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: trailrace-review
+  cancel-in-progress: false
+jobs:
+  dismiss:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and record false positive
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          REVIEW_ISSUE: ${{ inputs.review_issue }}
+          REVIEW_REASON: ${{ inputs.reason }}
+          REVIEWER: ${{ github.actor }}
+        run: |
+          python scripts/dismiss_alert.py --issue "$REVIEW_ISSUE" --reason "$REVIEW_REASON" --reviewer "$REVIEWER"
+      - name: Save review decision
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/monitor-history.json
+          git commit -m "Dismiss false-positive race alert"
+          git push
+      - name: Close reviewed issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEW_ISSUE: ${{ inputs.review_issue }}
+          REVIEW_REASON: ${{ inputs.reason }}
+        run: |
+          gh issue comment "$REVIEW_ISSUE" --body "Marked as false positive after manual review. Reason: $REVIEW_REASON"
+          gh issue close "$REVIEW_ISSUE" --reason "not planned"
