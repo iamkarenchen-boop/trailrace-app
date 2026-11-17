@@ -61,6 +61,17 @@
       "changes": [],
       "checkStatus": "checked",
       "lastChecked": "2026-11-17T12:35:26+00:00"
+    },
+    {
+      "id": "official_chianti_chiantiultratrail_2027",
+      "name": "Chianti Ultra Trail 73K (2027)",
+      "officialUrl": "https://chianti.utmb.world/races/cut",
+      "eventId": "chianti",
+      "raceId": "official_chianti_chiantiultratrail_2027",
+      "monitorScope": "race_page",
+      "status": "pending_verification",
+      "changes": [],
+      "checkStatus": "pending_first_check"
     }
   ],
   "lastRun": "2026-11-17T12:35:26+00:00",
