@@ -1,0 +1,66 @@
+name: Publish verified race update
+on:
+  workflow_dispatch:
+    inputs:
+      race_id:
+        description: "Race ID (utmb, lavaredo50, istria, mozart, andorra)"
+        required: true
+        type: choice
+        options:
+          - utmb
+          - lavaredo50
+          - istria
+          - mozart
+          - andorra
+      headline:
+        description: "Exact confirmed announcement summary"
+        required: true
+        type: string
+      official_source:
+        description: "Official HTTPS page proving the claim"
+        required: true
+        type: string
+      race_year:
+        description: "Year of the race (e.g. 2027)"
+        required: true
+        type: string
+      distance:
+        description: "Exact affected distance/category"
+        required: true
+        type: string
+      review_issue:
+        description: "GitHub Issue number reviewed by a human"
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: trailrace-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Publish only manually reviewed information
+        env:
+          RACE_ID: ${{ inputs.race_id }}
+          HEADLINE: ${{ inputs.headline }}
+          OFFICIAL_SOURCE: ${{ inputs.official_source }}
+          RACE_YEAR: ${{ inputs.race_year }}
+          DISTANCE: ${{ inputs.distance }}
+          REVIEW_ISSUE: ${{ inputs.review_issue }}
+          VERIFIED_BY: ${{ github.actor }}
+        run: |
+          python scripts/publish_verified.py --race "$RACE_ID" --headline "$HEADLINE" --source "$OFFICIAL_SOURCE" --race-year "$RACE_YEAR" --distance "$DISTANCE" --review-issue "$REVIEW_ISSUE" --verified-by "$VERIFIED_BY"
+      - name: Commit verified updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/verified-updates.json
+          git commit -m "Publish manually verified race announcement"
+          git push
