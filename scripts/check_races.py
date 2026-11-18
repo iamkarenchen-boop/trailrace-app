@@ -92,7 +92,7 @@ def main():
                 added = [item for item in snippets if item not in old_snippets] if "snippets" in old else []
                 # Existing snapshots only contain hashes. Never claim a precise category without an old text baseline.
                 labels = classify(added) if added else [{"category": "unclassified_change", "priority": "low"}]
-                history["events"].append({"raceId": key, "detectedAt": now, "type": "page_keyword_change", "status": "needs_review", "sourceUrl": url, "categories": labels, "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."})
+                history["events"].append({"raceId": key, "detectedAt": now, "type": "page_keyword_change", "status": "needs_review", "sourceUrl": url, "categories": labels, "addedEvidenceSnippets": added[:8], "removedEvidenceSnippets": sorted(old_snippets - set(snippets))[:8] if "snippets" in old else [], "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts."})
             previous[key] = {"hash": digest, "keywordMatches": count, "lastSuccessfulCheck": now, "sourceUrl": url, "snippets": snippets}
             event["lastChecked"] = now
             event["checkStatus"] = "checked"
