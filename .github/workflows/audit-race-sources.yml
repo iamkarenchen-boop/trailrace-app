@@ -1,0 +1,33 @@
+name: Audit all curated race sources
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 4 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: trailrace-source-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check official source reachability for every curated race
+        run: python scripts/audit_race_sources.py
+      - name: Commit source audit when changed
+        run: |
+          if git diff --quiet -- data/race-source-audit.json && [ -z "$(git ls-files --others --exclude-standard data/race-source-audit.json)" ]; then
+            echo "No source changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/race-source-audit.json
+          git commit -m "Audit curated race official sources"
+          git pull --rebase
+          git push
