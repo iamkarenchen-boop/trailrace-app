@@ -19,13 +19,13 @@ export default function App(){
  const [storageReady,setStorageReady]=useState(false),stateRef=useRef({saved:{},following:{},stages:{}}),writeQueue=useRef(Promise.resolve());
  const [backupInput,setBackupInput]=useState(''),[showRestore,setShowRestore]=useState(false),[tab,setTab]=useState('explore'),[query,setQuery]=useState(''),[races,setRaces]=useState([]),[series,setSeries]=useState([]),[monitor,setMonitor]=useState([]),[verified,setVerified]=useState([]),[monitorRun,setMonitorRun]=useState(null),[refreshing,setRefreshing]=useState(false),[saved,setSaved]=useState({}),[following,setFollowing]=useState({}),[detail,setDetail]=useState(null),[loading,setLoading]=useState(true),[error,setError]=useState(''),[stages,setStages]=useState({}),[country,setCountry]=useState('全部'),[distance,setDistance]=useState('all'),[month,setMonth]=useState('全部月份'),[registration,setRegistration]=useState('all');
  // Restore one canonical snapshot before enabling any writes. Migrate v1 records once.
- useEffect(()=>{let active=true;(async()=>{try{
+ useEffect(()=>{let active=true,loaded=false;(async()=>{try{
   let raw=await AsyncStorage.getItem(STORAGE_KEY),value;
   if(raw){value=normalizeState(JSON.parse(raw))}
   else {const vals=await AsyncStorage.multiGet(LEGACY_KEYS);value=normalizeState({saved:JSON.parse(vals[0][1]||'{}'),following:JSON.parse(vals[1][1]||'{}'),stages:JSON.parse(vals[2][1]||'{}')});await AsyncStorage.setItem(STORAGE_KEY,JSON.stringify(value))}
-  if(!active)return;stateRef.current=value;setSaved(value.saved);setFollowing(value.following);setStages(value.stages);
+  if(!active)return;stateRef.current=value;setSaved(value.saved);setFollowing(value.following);setStages(value.stages);loaded=true;
  }catch(e){Alert.alert('读取本机记录失败','为防止覆盖旧记录，暂时禁用赛历修改和备份恢复。');return}
- finally{if(active)setStorageReady(true)}})();return()=>{active=false}},[]);
+ finally{if(active&&loaded)setStorageReady(true)}})();return()=>{active=false}},[]);
  // Serialize writes: rapid taps cannot overwrite a newer state with an older snapshot.
  function persist(next){stateRef.current=next;setSaved(next.saved);setFollowing(next.following);setStages(next.stages);
   writeQueue.current=writeQueue.current.catch(()=>{}).then(()=>AsyncStorage.setItem(STORAGE_KEY,JSON.stringify(next)));
