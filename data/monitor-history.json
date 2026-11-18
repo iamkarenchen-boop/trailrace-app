@@ -1,3 +1,90 @@
 {
-  "events": []
+  "events": [
+    {
+      "raceId": "utmb",
+      "detectedAt": "2026-11-18T04:14:10+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://montblanc.utmb.world/",
+      "categories": [
+        {
+          "category": "eligibility",
+          "priority": "high"
+        }
+      ],
+      "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts.",
+      "issueNumber": 2,
+      "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/2"
+    },
+    {
+      "raceId": "lavaredo50",
+      "detectedAt": "2026-11-18T04:14:10+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://lavaredo.utmb.world/",
+      "categories": [
+        {
+          "category": "other_page_text",
+          "priority": "low"
+        }
+      ],
+      "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."
+    },
+    {
+      "raceId": "istria",
+      "detectedAt": "2026-11-18T04:14:10+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://istria.utmb.world/",
+      "categories": [
+        {
+          "category": "other_page_text",
+          "priority": "low"
+        }
+      ],
+      "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."
+    },
+    {
+      "raceId": "mozart",
+      "detectedAt": "2026-11-18T04:14:10+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "categories": [
+        {
+          "category": "other_page_text",
+          "priority": "low"
+        }
+      ],
+      "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."
+    },
+    {
+      "raceId": "andorra",
+      "detectedAt": "2026-11-18T04:14:10+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://andorra.utmb.world/",
+      "categories": [
+        {
+          "category": "other_page_text",
+          "priority": "low"
+        }
+      ],
+      "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."
+    },
+    {
+      "raceId": "chianti",
+      "detectedAt": "2026-11-18T04:14:10+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://chianti.utmb.world/",
+      "categories": [
+        {
+          "category": "other_page_text",
+          "priority": "low"
+        }
+      ],
+      "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."
+    }
+  ]
 }
