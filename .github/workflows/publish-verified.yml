@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       race_id:
-        description: "Race ID (utmb, lavaredo50, istria, mozart, andorra)"
+        description: "Race ID (utmb, lavaredo50, istria, mozart, andorra, chianti, official_chianti_chiantiultratrail_2027)"
         required: true
         type: choice
         options:
@@ -12,6 +12,8 @@ on:
           - istria
           - mozart
           - andorra
+          - chianti
+          - official_chianti_chiantiultratrail_2027
       headline:
         description: "Exact confirmed announcement summary"
         required: true
