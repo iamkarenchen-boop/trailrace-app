@@ -48,6 +48,9 @@ def main():
             if found.get("total_count", 0):
                 print("TEST: existing issue found, skipped duplicate creation.")
                 continue
+        added = event.get("addedEvidenceSnippets") or []
+        removed = event.get("removedEvidenceSnippets") or []
+        evidence = "\n### Automatically extracted differences (UNVERIFIED)\n" + ("\n".join("- Added: " + str(v)[:320] for v in added[:8]) if added else "- No precise added text available") + "\n" + ("\n".join("- Removed: " + str(v)[:320] for v in removed[:8]) if removed else "- No precise removed text available") + "\n"
         body = (
             "## Automated detection — NOT an official announcement\n\n"
             f"- Race: {race}\n"
