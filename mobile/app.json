@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "TrailRace",
+    "slug": "trailrace",
+    "scheme": "trailrace",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.trailrace.app"
+    },
+    "android": {
+      "package": "com.trailrace.app"
+    },
+    "extra": {
+      "eas": {}
+    }
+  }
+}
