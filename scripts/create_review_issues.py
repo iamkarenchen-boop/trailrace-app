@@ -57,7 +57,7 @@ def main():
             f"- Detected (UTC): {event.get('detectedAt', 'unknown')}\n"
             f"- Possible topics (keyword hints only): {topics}\n"
             f"- Source: {event.get('sourceUrl', '')}\n\n"
-            evidence + "\n### Human verification checklist\n"
+            + evidence + "\n### Human verification checklist\n"
             "- [ ] Open the official source and locate the specific announcement.\n"
             "- [ ] Check event year, distance/category, dates, timezone, and eligibility.\n"
             "- [ ] Compare with previous official terms; ignore navigation/marketing changes.\n"
