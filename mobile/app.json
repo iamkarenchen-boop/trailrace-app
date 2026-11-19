@@ -3,18 +3,24 @@
     "name": "TrailRace",
     "slug": "trailrace",
     "scheme": "trailrace",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.trailrace.app"
+      "bundleIdentifier": "com.trailrace.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.trailrace.app"
     },
     "extra": {
       "eas": {}
-    }
+    },
+    "description": "探索越野跑赛事，管理个人赛历，关注经过人工核实的官方赛事动态。",
+    "privacy": "public"
   }
 }
