@@ -85,6 +85,40 @@
         }
       ],
       "description": "Potentially relevant page text changed. Categories are automated hints, not confirmed facts."
+    },
+    {
+      "raceId": "utmb",
+      "detectedAt": "2026-11-19T04:17:14+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://montblanc.utmb.world/",
+      "categories": [
+        {
+          "category": "eligibility",
+          "priority": "high"
+        }
+      ],
+      "addedEvidenceSnippets": [
+        "august 2026 race category running stones 4 start date 24th august 2026 race details registrations closed 25th august 2026 race category running stones 1 start date 25th august 2026 race details registrations closed 24th august 2026 start date 24t",
+        "head! be the first to hear about the event's highlights. see more discover the races registrations closed 28th august 2026 race category start date 28th august 2026 race details registrations closed 28th august 2026 race category start date 28th a",
+        "te 24th august 2026 race details registrations closed 25th august 2026 race category running stones 1 start date 25th august 2026 race details registrations closed 24th august 2026 start date 24th august 2026 race details registrations closed 24th a",
+        "te 27th august 2026 race details registrations closed 24th august 2026 race category running stones 4 start date 24th august 2026 race details registrations closed 25th august 2026 race category running stones 1 start date 25th august 2026 race deta",
+        "tions closed 27th august 2026 race category start date 27th august 2026 race details registrations closed 24th august 2026 race category running stones 4 start date 24th august 2026 race details registrations closed 25th august 2026 race category",
+        "tions closed 28th august 2026 race category start date 28th august 2026 race details registrations closed 27th august 2026 race category start date 27th august 2026 race details registrations closed 24th august 2026 race category running stones 4",
+        "tions closed 28th august 2026 race category start date 28th august 2026 race details registrations closed 28th august 2026 race category start date 28th august 2026 race details registrations closed 27th august 2026 race category start date 27th a"
+      ],
+      "removedEvidenceSnippets": [
+        "6 race category running stones 4 distance 145 km elevation gain 9500 m+ race details registrations closed 25th august 2026 race category running stones 1 start date 25th august 2026 race details registrations closed 24th august 2026 start date 24t",
+        "head! be the first to hear about the event's highlights. see more discover the races registrations closed 28th august 2026 start location chamonix race category distance 174 km elevation gain 9700 m+ race details registrations closed 28th august 2",
+        "location chamonix race category distance 174 km elevation gain 9700 m+ race details registrations closed 28th august 2026 start location courmayeur race category distance 108 km elevation gain 6200 m+ race details registrations closed 27th august",
+        "ocation courmayeur race category distance 108 km elevation gain 6200 m+ race details registrations closed 27th august 2026 start location orsières race category distance 60 km elevation gain 3500 m+ race details registrations closed 24th august 20",
+        "t location orsières race category distance 60 km elevation gain 3500 m+ race details registrations closed 24th august 2026 race category running stones 4 distance 145 km elevation gain 9500 m+ race details registrations closed 25th august 2026 rac",
+        "vation gain 3500 m+ race details registrations closed 24th august 2026 race category running stones 4 distance 145 km elevation gain 9500 m+ race details registrations closed 25th august 2026 race category running stones 1 start date 25th august 202",
+        "vation gain 9500 m+ race details registrations closed 25th august 2026 race category running stones 1 start date 25th august 2026 race details registrations closed 24th august 2026 start date 24th august 2026 race details registrations closed 24th a"
+      ],
+      "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
+      "issueNumber": 3,
+      "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/3"
     }
   ]
 }
