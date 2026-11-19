@@ -1,0 +1,271 @@
+{
+  "checkedAt": "2026-11-19T05:41:23+00:00",
+  "raceCount": 29,
+  "uniqueSourceCount": 7,
+  "reachableSourceCount": 7,
+  "scope": "source_reachability_only",
+  "sources": {
+    "https://andorra.utmb.world/": {
+      "status": "reachable",
+      "checkedAt": "2026-11-19T05:41:23+00:00"
+    },
+    "https://chianti.utmb.world/": {
+      "status": "reachable",
+      "checkedAt": "2026-11-19T05:41:23+00:00"
+    },
+    "https://chianti.utmb.world/races/cut": {
+      "status": "reachable",
+      "checkedAt": "2026-11-19T05:41:23+00:00"
+    },
+    "https://istria.utmb.world/races": {
+      "status": "reachable",
+      "checkedAt": "2026-11-19T05:41:23+00:00"
+    },
+    "https://lavaredo.utmb.world/races": {
+      "status": "reachable",
+      "checkedAt": "2026-11-19T05:41:23+00:00"
+    },
+    "https://montblanc.utmb.world/races": {
+      "status": "reachable",
+      "checkedAt": "2026-11-19T05:41:23+00:00"
+    },
+    "https://mozart.utmb.world/": {
+      "status": "reachable",
+      "checkedAt": "2026-11-19T05:41:23+00:00"
+    }
+  },
+  "races": [
+    {
+      "raceId": "official_lavaredo_lavaredo120k_2027",
+      "sourceUrl": "https://lavaredo.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_lavaredo_lavaredo80k_2027",
+      "sourceUrl": "https://lavaredo.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_lavaredo_lavaredo50k_2027",
+      "sourceUrl": "https://lavaredo.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_lavaredo_lavaredo20k_2027",
+      "sourceUrl": "https://lavaredo.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_lavaredo_lavaredo10k_2027",
+      "sourceUrl": "https://lavaredo.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_istria_168k_2027",
+      "sourceUrl": "https://istria.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_istria_110k_2027",
+      "sourceUrl": "https://istria.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_istria_69k_2027",
+      "sourceUrl": "https://istria.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_istria_42k_2027",
+      "sourceUrl": "https://istria.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_istria_21k_2027",
+      "sourceUrl": "https://istria.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_montblanc_utmb_2026",
+      "sourceUrl": "https://montblanc.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_montblanc_ccc_2026",
+      "sourceUrl": "https://montblanc.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_montblanc_occ_2026",
+      "sourceUrl": "https://montblanc.utmb.world/races",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_chianti_chiantiwinerun_2027",
+      "sourceUrl": "https://chianti.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_chianti_chiantihalftrail_2027",
+      "sourceUrl": "https://chianti.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_chianti_chiantimarathontrail_2027",
+      "sourceUrl": "https://chianti.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_chianti_chiantiultratrail_2027",
+      "sourceUrl": "https://chianti.utmb.world/races/cut",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_chianti_ultratrailchianticastles_2027",
+      "sourceUrl": "https://chianti.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_andorra_ultra105k_2027",
+      "sourceUrl": "https://andorra.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_andorra_trail80k_2027",
+      "sourceUrl": "https://andorra.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_andorra_trail50k_2027",
+      "sourceUrl": "https://andorra.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_andorra_trail25k_2027",
+      "sourceUrl": "https://andorra.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_andorra_trail10km_2027",
+      "sourceUrl": "https://andorra.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_mozart_mozart100_2027",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_mozart_mozartultra_2027",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_mozart_mozartmarathon_2027",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_mozart_mozarthalfmarathon_2027",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_mozart_mozartlaketrail_2027",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    },
+    {
+      "raceId": "official_mozart_mozartultrarelay_2027",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "sourceStatus": "reachable",
+      "lastDataVerifiedAt": "2026-11-17",
+      "dataCurrent": false,
+      "note": "Source reachability is not verification of distance, date, elevation, stones or registration."
+    }
+  ]
+}
