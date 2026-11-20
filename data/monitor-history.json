@@ -119,6 +119,61 @@
       "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
       "issueNumber": 3,
       "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/3"
+    },
+    {
+      "raceId": "utmb",
+      "detectedAt": "2026-11-20T04:12:47+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://montblanc.utmb.world/",
+      "categories": [
+        {
+          "category": "registration_open",
+          "priority": "high"
+        }
+      ],
+      "addedEvidenceSnippets": [
+        "first to know. notify me relive the best moments of this edition discover the races registrations closed 28th august 2026 race category start date 28th august 2026 race details registrations closed 28th august 2026 race category start date 28th a",
+        "sign in 2027 edition: stay updated the 2027 edition is in the works event dates and registration opening dates will be announced soon. leave your email address to be among the first to know. notify me relive the best moments of this edition disco"
+      ],
+      "removedEvidenceSnippets": [
+        "edom. not without responsibilities. the 2027 edition is in the works event dates and registration opening dates will be announced soon. leave your email address to be among the first to know. notify me relive the best moments of this edition the g",
+        "head! be the first to hear about the event's highlights. see more discover the races registrations closed 28th august 2026 race category start date 28th august 2026 race details registrations closed 28th august 2026 race category start date 28th a"
+      ],
+      "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
+      "issueNumber": 4,
+      "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/4"
+    },
+    {
+      "raceId": "istria",
+      "detectedAt": "2026-11-20T04:12:47+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://istria.utmb.world/",
+      "categories": [
+        {
+          "category": "eligibility",
+          "priority": "high"
+        }
+      ],
+      "addedEvidenceSnippets": [
+        "2k race category running stones 2 distance 42 km elevation gain 1000 m+ race details registrations open 4th april 2027 21k race category running stones 1 distance 21.5 km elevation gain 157 m+ race details last 50 entries for istria 69k see more e",
+        "ce 69.6 km elevation gain 2400 m+ race details full 3rd april 2027 42k race category running stones 2 distance 42 km elevation gain 1000 m+ race details registrations open 4th april 2027 21k race category running stones 1 distance 21.5 km elevation",
+        "k race category running stones 3 distance 111 km elevation gain 4200 m+ race details registrations open 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details full 3rd april 2027 42k race category ru",
+        "vation gain 1000 m+ race details registrations open 4th april 2027 21k race category running stones 1 distance 21.5 km elevation gain 157 m+ race details last 50 entries for istria 69k see more event 88% sold start lines are filling in for 2027 and",
+        "vation gain 4200 m+ race details registrations open 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details full 3rd april 2027 42k race category running stones 2 distance 42 km elevation gain 1000 m+ r"
+      ],
+      "removedEvidenceSnippets": [
+        "2k race category running stones 2 distance 42 km elevation gain 1000 m+ race details registrations open 4th april 2027 21k race category running stones 1 distance 21.5 km elevation gain 157 m+ race details last 50 entries for istria 69k see more l",
+        "k race category running stones 3 distance 111 km elevation gain 4200 m+ race details registrations open 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details registrations open 3rd april 2027 42k ra",
+        "race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details registrations open 3rd april 2027 42k race category running stones 2 distance 42 km elevation gain 1000 m+ race details registrations open 4th april 2027 21k race",
+        "vation gain 1000 m+ race details registrations open 4th april 2027 21k race category running stones 1 distance 21.5 km elevation gain 157 m+ race details last 50 entries for istria 69k see more last 50 entries for istria 42k claim your entry see mor",
+        "vation gain 2400 m+ race details registrations open 3rd april 2027 42k race category running stones 2 distance 42 km elevation gain 1000 m+ race details registrations open 4th april 2027 21k race category running stones 1 distance 21.5 km elevation",
+        "vation gain 4200 m+ race details registrations open 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details registrations open 3rd april 2027 42k race category running stones 2 distance 42 km elevation"
+      ],
+      "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
+      "issueNumber": 5,
+      "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/5"
     }
   ]
 }
