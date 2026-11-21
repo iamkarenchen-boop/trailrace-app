@@ -174,6 +174,63 @@
       "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
       "issueNumber": 5,
       "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/5"
+    },
+    {
+      "raceId": "utmb",
+      "detectedAt": "2026-11-21T04:10:16+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://montblanc.utmb.world/",
+      "categories": [
+        {
+          "category": "eligibility",
+          "priority": "high"
+        }
+      ],
+      "addedEvidenceSnippets": [
+        "22nd august 2027 start date 22nd august 2027 race details opening soon race category running stones 2 race details opening soon race category running stones 1 race details conquering mont-blanc: the path 2 utmb this original documentary gives you a",
+        "27 race category start date 28th august 2027 race details opening soon race category running stones 4 race details opening soon race category running stones 1 race details opening soon 22nd august 2027 start date 22nd august 2027 race details openin",
+        "opening soon race category running stones 2 race details opening soon race category running stones 1 race details conquering mont-blanc: the path 2 utmb this original documentary gives you a unique opportunity to discover trail running through thei",
+        "opening soon race category running stones 4 race details opening soon race category running stones 1 race details opening soon 22nd august 2027 start date 22nd august 2027 race details opening soon race category running stones 2 race details openin"
+      ],
+      "removedEvidenceSnippets": [
+        "august 2026 race category running stones 1 start date 25th august 2026 race details registrations closed 24th august 2026 start date 24th august 2026 race details registrations closed 24th august 2026 race category running stones 2 start date 24t",
+        "august 2026 race category running stones 2 start date 24th august 2026 race details registrations closed 25th august 2026 race category running stones 1 race details conquering mont-blanc: the path 2 utmb this original documentary gives you a uni",
+        "august 2026 race category running stones 4 start date 24th august 2026 race details registrations closed 25th august 2026 race category running stones 1 start date 25th august 2026 race details registrations closed 24th august 2026 start date 24t",
+        "first to know. notify me relive the best moments of this edition discover the races registrations closed 28th august 2026 race category start date 28th august 2026 race details registrations closed 28th august 2026 race category start date 28th a",
+        "sign in 2027 edition: stay updated the 2027 edition is in the works event dates and registration opening dates will be announced soon. leave your email address to be among the first to know. notify me relive the best moments of this edition disco",
+        "tails registrations closed 24th august 2026 start date 24th august 2026 race details registrations closed 24th august 2026 race category running stones 2 start date 24th august 2026 race details registrations closed 25th august 2026 race category",
+        "te 24th august 2026 race details registrations closed 24th august 2026 race category running stones 2 start date 24th august 2026 race details registrations closed 25th august 2026 race category running stones 1 race details conquering mont-blanc: t",
+        "te 24th august 2026 race details registrations closed 25th august 2026 race category running stones 1 race details conquering mont-blanc: the path 2 utmb this original documentary gives you a unique opportunity to discover trail running through thei"
+      ],
+      "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
+      "issueNumber": 6,
+      "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/6"
+    },
+    {
+      "raceId": "mozart",
+      "detectedAt": "2026-11-21T04:10:16+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://mozart.utmb.world/",
+      "categories": [
+        {
+          "category": "eligibility",
+          "priority": "high"
+        }
+      ],
+      "addedEvidenceSnippets": [
+        "elevation gain 4800 m+ race details full 5th june 2027 mozart marathon race category running stones 2 distance 44 km elevation gain 1600 m+ race details full 5th june 2027 mozart half marathon race category running stones 1 distance 28 km elevation",
+        "tion gain 1600 m+ race details full 5th june 2027 mozart half marathon race category running stones 1 distance 28 km elevation gain 1100 m+ race details registrations open 5th june 2027 mozart lake trail distance 12 km elevation gain 200 m+ race det"
+      ],
+      "removedEvidenceSnippets": [
+        "elevation gain 4800 m+ race details full 5th june 2027 mozart marathon race category running stones 2 distance 44 km elevation gain 1600 m+ race details registrations open 5th june 2027 mozart half marathon race category running stones 1 distance 28",
+        "m+ race details registrations open 5th june 2027 mozart half marathon race category running stones 1 distance 28 km elevation gain 1100 m+ race details registrations open 5th june 2027 mozart lake trail distance 12 km elevation gain 200 m+ race det",
+        "on race category running stones 2 distance 44 km elevation gain 1600 m+ race details registrations open 5th june 2027 mozart half marathon race category running stones 1 distance 28 km elevation gain 1100 m+ race details registrations open 5th jun"
+      ],
+      "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
+      "issueNumber": 7,
+      "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/7"
     }
   ]
 }
