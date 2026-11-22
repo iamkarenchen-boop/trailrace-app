@@ -231,6 +231,33 @@
       "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
       "issueNumber": 7,
       "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/7"
+    },
+    {
+      "raceId": "istria",
+      "detectedAt": "2026-11-22T04:12:40+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://istria.utmb.world/",
+      "categories": [
+        {
+          "category": "eligibility",
+          "priority": "high"
+        }
+      ],
+      "addedEvidenceSnippets": [
+        "ation gain 6800 m+ race details registrations open 3rd april 2027 110k race category running stones 3 distance 111 km elevation gain 4200 m+ race details full 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+",
+        "k race category running stones 4 distance 168 km elevation gain 6800 m+ race details registrations open 3rd april 2027 110k race category running stones 3 distance 111 km elevation gain 4200 m+ race details full 3rd april 2027 69k race category ru",
+        "nce 111 km elevation gain 4200 m+ race details full 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details full 3rd april 2027 42k race category running stones 2 distance 42 km elevation gain 1000 m+ r"
+      ],
+      "removedEvidenceSnippets": [
+        "ation gain 6800 m+ race details registrations open 3rd april 2027 110k race category running stones 3 distance 111 km elevation gain 4200 m+ race details registrations open 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation",
+        "k race category running stones 3 distance 111 km elevation gain 4200 m+ race details registrations open 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details full 3rd april 2027 42k race category ru",
+        "k race category running stones 4 distance 168 km elevation gain 6800 m+ race details registrations open 3rd april 2027 110k race category running stones 3 distance 111 km elevation gain 4200 m+ race details registrations open 3rd april 2027 69k ra",
+        "vation gain 4200 m+ race details registrations open 3rd april 2027 69k race category running stones 2 distance 69.6 km elevation gain 2400 m+ race details full 3rd april 2027 42k race category running stones 2 distance 42 km elevation gain 1000 m+ r"
+      ],
+      "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts.",
+      "issueNumber": 8,
+      "issueUrl": "https://github.com/iamkarenchen-boop/trailrace-app/issues/8"
     }
   ]
 }
