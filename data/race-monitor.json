@@ -8,7 +8,7 @@
       "name": "UTMB Mont-Blanc",
       "officialUrl": "https://montblanc.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": "2026-11-23T04:28:41+00:00",
+      "lastChecked": "2026-11-24T04:19:26+00:00",
       "changes": [],
       "checkStatus": "checked",
       "lastErrorAt": "2026-11-17T11:02:46+00:00"
@@ -18,7 +18,7 @@
       "name": "Lavaredo Ultra Trail",
       "officialUrl": "https://lavaredo.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": "2026-11-23T04:28:41+00:00",
+      "lastChecked": "2026-11-24T04:19:26+00:00",
       "changes": [],
       "checkStatus": "checked",
       "lastErrorAt": "2026-11-17T11:02:46+00:00"
@@ -28,7 +28,7 @@
       "name": "Istria 100 by UTMB",
       "officialUrl": "https://istria.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": "2026-11-23T04:28:41+00:00",
+      "lastChecked": "2026-11-24T04:19:26+00:00",
       "changes": [],
       "checkStatus": "checked",
       "lastErrorAt": "2026-11-17T11:02:46+00:00"
@@ -38,7 +38,7 @@
       "name": "Mozart 100 by UTMB",
       "officialUrl": "https://mozart.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": "2026-11-23T04:28:41+00:00",
+      "lastChecked": "2026-11-24T04:19:26+00:00",
       "changes": [],
       "checkStatus": "checked",
       "lastErrorAt": "2026-11-17T11:02:46+00:00"
@@ -48,7 +48,7 @@
       "name": "Andorra by UTMB",
       "officialUrl": "https://andorra.utmb.world/",
       "status": "pending_verification",
-      "lastChecked": "2026-11-23T04:28:41+00:00",
+      "lastChecked": "2026-11-24T04:19:26+00:00",
       "changes": [],
       "checkStatus": "checked",
       "lastErrorAt": "2026-11-17T11:02:46+00:00"
@@ -60,7 +60,7 @@
       "status": "pending_verification",
       "changes": [],
       "checkStatus": "checked",
-      "lastChecked": "2026-11-23T04:28:41+00:00"
+      "lastChecked": "2026-11-24T04:19:26+00:00"
     },
     {
       "id": "official_chianti_chiantiultratrail_2027",
@@ -72,9 +72,9 @@
       "status": "pending_verification",
       "changes": [],
       "checkStatus": "checked",
-      "lastChecked": "2026-11-23T04:28:41+00:00"
+      "lastChecked": "2026-11-24T04:19:26+00:00"
     }
   ],
-  "lastRun": "2026-11-23T04:28:41+00:00",
+  "lastRun": "2026-11-24T04:19:26+00:00",
   "lastRunSuccessCount": 7
 }
