@@ -538,6 +538,28 @@
         "content utmb ® world utmb world series events select the event you're interested in register to discover the race asia 27 november - 06 december 2026 10 - 12 december 2026 07 - 10 january 2027 05 - 07 march 2027 09 - 11 april 2027 16 - 18 apr"
       ],
       "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts."
+    },
+    {
+      "raceId": "andorra",
+      "detectedAt": "2026-11-28T04:17:25+00:00",
+      "type": "page_keyword_change",
+      "status": "needs_review",
+      "sourceUrl": "https://andorra.utmb.world/",
+      "categories": [
+        {
+          "category": "other_page_text",
+          "priority": "low"
+        }
+      ],
+      "addedEvidenceSnippets": [
+        "ity bibs available strictly limited number of charity bibs for the trail 50k general registration now open charity bibs available strictly limited number of charity bibs for the trail 50k about the race trail 100 andorra by utmb® is the exciting n",
+        "ntact us get notified get excited news sportograf photos the wall of fame utmb store register homepage races menu news sign in where every trail tells a story charity bibs available strictly limited number of charity bibs for the trail 50k gen"
+      ],
+      "removedEvidenceSnippets": [
+        "ntact us get notified get excited news sportograf photos the wall of fame utmb store register homepage races menu news sign in where every trail tells a story general registration now open about the race trail 100 andorra by utmb® is the excit",
+        "re register homepage races menu news sign in where every trail tells a story general registration now open about the race trail 100 andorra by utmb® is the exciting new trail running expedition into the mighty pyrenees. featuring a choice of dista"
+      ],
+      "description": "Potentially relevant page text changed. Snippets and categories are automated hints, not confirmed facts."
     }
   ]
 }
